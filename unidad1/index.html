@@ -15,28 +15,28 @@
   </header>
   <main>
    
-    <form action="index.php" method="post">
+    <form >
       <h1>Formulario de contacto</h1>
       <p>Solicitá un contacto con un asesor</p>
       <div class="row">
 
         <div class="contenedor">
-          <label for="nombre">Nombre</label>
+          <label for="nombre">Nombre(*)</label>
           <input type="text" name="nombre" id="nombre" required>
         </div>
         <div class="contenedor">
-          <label for="apellido">Apellido</label>
+          <label for="apellido">Apellido(*)</label>
           <input type="text" name="apellido" id="apellido" required>
         </div>
       </div>
       <div class="row">
 
         <div class="contenedor">
-          <label for="dni">DNI</label>
+          <label for="dni">DNI(*)</label>
           <input type="number" name="dni" id="dni" required>
         </div>
         <div class="contenedor">
-          <label for="email">Email</label>
+          <label for="email">Email(*)</label>
           <input type="email" name="email" id="email" required>
         </div>
       </div>
@@ -44,7 +44,7 @@
 
         <div class="contenedor">
           <label for="telefono">Teléfono</label>
-          <input type="tel" name="telefono" id="telefono" required>
+          <input type="tel" name="telefono" id="telefono">
         </div>
         <div class="contenedor">
           <label for="tipo_seguro">Tipo de seguro</label>
@@ -57,7 +57,7 @@
         </div>
       </div>
       <div class="submit">
-        <input type="submit" value="Enviar">
+        <input id="enviar" type="submit" value="Enviar" target="_blanck">
       </div>
     </form>
   </main>

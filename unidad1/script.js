@@ -13,3 +13,5 @@ document.getElementById("tipo_seguro").addEventListener("change", function() {
         valorSeguro.innerHTML='Valor premium $1500'
     }
 });
+
+document.getElementById("enviar").addEventListener("click",()=>alert("Mensaje enviado"));
