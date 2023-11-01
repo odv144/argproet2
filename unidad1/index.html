@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Formulario de contacto</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <a href="#">Link1</a>
+      <a href="#">Link2</a>
+      <a href="#">Link3</a>
+    </nav>
+  </header>
+  <main>
+   
+    <form action="index.php" method="post">
+      <h1>Formulario de contacto</h1>
+      <p>Solicitá un contacto con un asesor</p>
+      <div class="row">
+
+        <div class="contenedor">
+          <label for="nombre">Nombre</label>
+          <input type="text" name="nombre" id="nombre" required>
+        </div>
+        <div class="contenedor">
+          <label for="apellido">Apellido</label>
+          <input type="text" name="apellido" id="apellido" required>
+        </div>
+      </div>
+      <div class="row">
+
+        <div class="contenedor">
+          <label for="dni">DNI</label>
+          <input type="number" name="dni" id="dni" required>
+        </div>
+        <div class="contenedor">
+          <label for="email">Email</label>
+          <input type="email" name="email" id="email" required>
+        </div>
+      </div>
+      <div class="row">
+
+        <div class="contenedor">
+          <label for="telefono">Teléfono</label>
+          <input type="tel" name="telefono" id="telefono" required>
+        </div>
+        <div class="contenedor">
+          <label for="tipo_seguro">Tipo de seguro</label>
+          <select name="tipo_seguro" id="tipo_seguro">
+            <option value="basico">Básico</option>
+            <option value="intermedio">Intermedio</option>
+            <option value="premium">Premium</option>
+          </select>
+          <p id="valor"></p>
+        </div>
+      </div>
+      <div class="submit">
+        <input type="submit" value="Enviar">
+      </div>
+    </form>
+  </main>
+  <footer>
+    <p>Copyright &copy; 2023 Seguro No Pagamos Cooperativa</p>
+  </footer>
+<script src="script.js" text="text/javascript"></script>
+</body>
+</html>
