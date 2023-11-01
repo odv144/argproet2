@@ -1,4 +1,4 @@
-:root{
+/*:root{
   --color1:#EAE509;
   --color2:#7DCE13;
   --color3:#5BB318;
@@ -7,37 +7,49 @@
   --fondoForm:#aceca6;
   --bordeInput:#186102dc;
   --fondoInput:#c1eebc;
+}*/
+:root{
+  --color1:#CDF5FD;
+  --color2:#A0E9FF;
+  --color3:#89CFF3;
+  --color4:#00A9FF;
+  --fondo:#837f7f;
+  --fondoForm: var(--color3);
+  --bordeInput:#005580;
+  --fondoInput: var(--color2);
+  --texto:#1101ec;
+  --sombra: #00e3f3;
 }
 body {
   font-family: sans-serif;
   font-size: 16px;
   background-color: var(--fondo);
-  color:var(--color4);
+  color:var(--texto);
  
 }
 
 header {
-  background-color: var(--color3);
+  background-color: var(--color4);
   min-height: 50px;
   display:flex;
   justify-content: space-around;
   align-items: center;
 }
 header a{
-  color:var(--color4);
+  color:var(--texto);
   font-size: 1.5em;
   max-height: 20px;
   margin: 5px;
   padding: 5px;
   text-decoration: none;
-  text-shadow: 2px 1px 0.8px #EAE509;
-  border:2px solid #183503;
+  text-shadow: 2px 1px 0.8px var(--sombra);
+  border:2px solid var(--color4);
   border-top-left-radius: 15px ;
   border-top-right-radius: 15px;
-  background: #1eff00;
+  background:var(--color3);
 }
 header a:hover{
-  background-color: #e2f81c;
+  background-color: var(--color4);
 }
 
 main {
@@ -71,13 +83,14 @@ form h1, form p{
 
 label {
   font-weight: bold;
-  text-shadow: 1px 2px 1px #e2f81c;
+  text-shadow: 1px 2px 1px var(--sombra);
 }
 
 input {
   width: 100%;
   padding: 10px;
   border: 1px solid #ccc;
+  border-radius: 10px;
   box-sizing: border-box;
   border-bottom: 2px solid var(--bordeInput);
   border-right: 2px solid var(--bordeInput);
@@ -90,6 +103,9 @@ select {
   width: 100%;
   padding: 10px;
   border: 1px solid #ccc;
+  border-radius:10px;
+  border-bottom: 2px solid var(--bordeInput);
+  border-right: 2px solid var(--bordeInput);
   background-color: var(--fondoInput);
 }
 
