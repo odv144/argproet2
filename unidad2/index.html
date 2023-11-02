@@ -4,41 +4,50 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
     <title>Trabajo Practico 2</title>
 </head>
 <body>
     <header>
-
+       <h2> <a href="">LOGO</a></h2>
+        <nav>
+            <a href="#">Inicio</a>
+            <a href="#">Calculadora</a>
+            <a href="#">Contacto</a>
+        </nav>
+        <button class="btn">Acerca</button>
     </header>
     <main>
         <section>
             <h1>Calculadora OdvSystem</h1>
-            <fieldset>
-                <div class="row">   
+         <div class="container">
+              
                     <div class="group-control">
-
-                        <label for="op1">Operador 1</label>
-                        <input type="number">
+                        <label for="op1"></label>
+                        <input id="op1" type="number" placeholder="Operador 1">
                     </div>
                     <div class="group-control">
-
-                        <label for="op2">Operador 2</label>
-                        <input type="number">
+                        <label for="op2" ></label>
+                        <input id = "op2" type="number" placeholder="Operador 2">
                     </div>
-                    <div class="group-control">
-                        <label for="rto">Resultado</label>
-                        <input type="number">
-                    </div>
-
-                </div>
+              
                 <div class="row">
-                    
+                   <button id="plus"><p>+</p></button>
+                   <button id="minus"><p>-</p></button>
+                   <button id="multi"><p>*</p></button>
+                   <button id="divi"><p>/</p></button> 
                 </div>
-            </fieldset>
+                <div class="group-control">
+                    <label for="rto" ></label>
+                    <input id = "rto" type="text" readonly="true" placeholder="Resultado">
+                </div>
+                <p id="error"></p>
+            </div>
         </section>
     </main>
     <footer>
         <p>@Copyright Omar Virili 2023 - Segunda Etapa Argentina Programa</p>
     </footer>
+    <script src="script.js"></script>
 </body>
 </html>
