@@ -39,12 +39,12 @@ header a {
   font-size: 1.5em;
   max-height: 20px;
   margin: 5px;
-  padding: 5px;
+  padding: 5px 10px;
   text-decoration: none;
   text-shadow: 2px 1px 0.8px var(--sombra);
   border: 2px solid var(--color4);
-  border-top-left-radius: 15px;
-  border-top-right-radius: 15px;
+  border-radius: 15px;
+  
   background: var(--color3);
 }
 header a:hover {
