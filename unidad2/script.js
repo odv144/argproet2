@@ -1,3 +1,10 @@
+function prueba(){
+    let suma=5+5
+    return suma
+}
+
+prueba()
+
 
 function suma(a,b){
     return parseInt(a)+parseInt(b);
@@ -26,7 +33,10 @@ function calcular(suma){
     
 }
 
+
 document.getElementById('plus').addEventListener('click',()=>calcular(suma))
 document.getElementById('minus').addEventListener('click',()=>calcular(resta))
 document.getElementById('multi').addEventListener('click',()=>calcular(multi))
 document.getElementById('divi').addEventListener('click',()=>calcular(division))
+
+

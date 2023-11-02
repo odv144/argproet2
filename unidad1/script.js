@@ -15,3 +15,4 @@ document.getElementById("tipo_seguro").addEventListener("change", function() {
 });
 
 document.getElementById("enviar").addEventListener("click",()=>alert("Mensaje enviado"));
+
